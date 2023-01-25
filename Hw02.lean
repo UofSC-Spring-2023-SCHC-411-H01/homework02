@@ -4,7 +4,14 @@ Homework 2 : Introduction to theorems and proofs in Lean
 
 /- 
 For each of the following propositions write down a correct formalization 
-that is error-free. You can sorry the proofs. 
+that is error-free. 
+
+For example, if you want to formalize the statement 
+that for all natural numbers `n`, `n < n + 1` you would _define_ a term of 
+type Prop, ie a propositions as 
+
+def example : Prop := ∀ (n:Nat), n < n+1
+
 -/
 
 -- Problem 1. Let m and n be natural numbers. If n ≤ m, then n^2 ≤ m^2. 
